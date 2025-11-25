@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <title>Supervision des caméras</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 2rem;
+      background-color: #f5f5f5;
+    }
+    h1 {
+      margin-bottom: 1rem;
+    }
+    table {
+      border-collapse: collapse;
+      width: 100%;
+      background: #fff;
+    }
+    th, td {
+      border: 1px solid #ddd;
+      padding: 0.6rem;
+      text-align: left;
+    }
+    th {
+      background-color: #eee;
+    }
+    .status-up {
+      color: #0b7a27;
+      font-weight: bold;
+    }
+    .status-down {
+      color: #b00020;
+      font-weight: bold;
+    }
+    #error {
+      color: #b00020;
+      margin-bottom: 1rem;
+    }
+  </style>
+</head>
+<body>
+  <h1>Supervision des caméras</h1>
+  <p id="error"></p>
+  <table>
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Nom</th>
+        <th>Adresse IP</th>
+        <th>Localisation</th>
+        <th>Statut</th>
+      </tr>
+    </thead>
+    <tbody id="camera-table-body">
+    </tbody>
+  </table>
+
+  <script src="app.js"></script>
+</body>
+</html>
